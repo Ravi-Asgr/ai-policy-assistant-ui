@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Send, Bot, User, Loader2, AlertCircle } from "lucide-react";
 
-const RAG_ENDPOINT = "https://ai-policy-assistant-doe8.onrender.com/bot/testmodel";
+//const RAG_ENDPOINT = "https://ai-policy-assistant-doe8.onrender.com/bot/testmodel";
+const RAG_ENDPOINT = "https://assistant.raviprakash-asg.workers.dev/bot/testmodel";
 
 export default function App() {
   const [question, setQuestion] = useState("");
