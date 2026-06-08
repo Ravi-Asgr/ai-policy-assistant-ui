@@ -37,7 +37,9 @@ export default function App() {
     setMessages((previousMessages) => [...previousMessages, userMessage]);
 
     try {
+       
       const url = `${RAG_ENDPOINT}?q=${encodeURIComponent(trimmedQuestion)}`;
+      console.log("Calling RAG : " + url);
 
       const response = await fetch(url, {
         method: "GET",
