@@ -31,12 +31,15 @@ export default function App() {
    setMessages((prev) => [...prev, { role: "user", content: trimmedQuestion }]);
 
    try {
-      const url = `${RAG_ENDPOINT}?q=${encodeURIComponent(trimmedQuestion)}`;
+      //const url = `${RAG_ENDPOINT}?q=${encodeURIComponent(trimmedQuestion)}`;
+	  const url = `${RAG_ENDPOINT}`; 
       console.log("Calling RAG : " + url);
 
       const response = await fetch(url, {
-        method: "POST",
-        headers: { Accept: "application/json, text/plain, */*" }
+        //method: "GET",
+		method: "POST",  
+        headers: { Accept: "application/json, text/plain, */*" },
+		body: trimmedQuestion  
       });
 
       if (!response.ok) {
