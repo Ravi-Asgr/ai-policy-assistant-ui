@@ -35,7 +35,7 @@ export default function App() {
       console.log("Calling RAG : " + url);
 
       const response = await fetch(url, {
-        method: "GET",
+        method: "POST",
         headers: { Accept: "application/json, text/plain, */*" }
       });
 
