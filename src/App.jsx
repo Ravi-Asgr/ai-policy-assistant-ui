@@ -1,7 +1,8 @@
 import React, { useState, useRef } from "react";
 import { Send, Bot, User, Loader2, AlertCircle, Zap } from "lucide-react";
 
-const RAG_ENDPOINT = "https://ai-policy-assistant-doe8.onrender.com/bot/testmodel";
+//const RAG_ENDPOINT = "https://ai-policy-assistant-doe8.onrender.com/bot/testmodel";
+const RAG_ENDPOINT = "https://ai-policy-assistant-doe8.onrender.com/webhook/github/search";
 const STREAM_ENDPOINT = "https://ai-policy-assistant-doe8.onrender.com/bot/teststreammodel";
 
 export default function App() {
